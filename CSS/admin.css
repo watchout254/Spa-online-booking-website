@@ -1,0 +1,282 @@
+@import url(https://fontawesome.com/v5.15/icons/qrcode?style=solid);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image:url(../IMAGES/strator.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: all .5s ease; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background:whitesmoke;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color:black;
+    text-align: center;
+    line-height: 70px;
+    background:white;
+    user-select: none;
+    font-weight: bolder;
+    font-style: oblique;
+
+}
+
+.sidebar header img {
+    clip-path: circle();
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color:black;
+    font-weight: bold;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(255, 255,255, .1);
+    border-bottom: 1px solid black;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+    transition: .5s;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+
+}
+
+#check {
+    display: none;
+}
+
+label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background:lightblue;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
+
+label #btn {
+    left:40px;
+    top: 25px;
+    font-size: 35px;
+    color:white;
+    transition: all .5s ease;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 10px;
+    font-size: 30px;
+    color:black;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events:none ;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+#check:checked ~ section{
+    margin-left: 250px;
+}
+
+article{
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+
+}
+li {
+    list-style: none;
+    color: white;
+}
+h1 {
+    color: white;
+}
+.btn {
+    background:brown;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover {
+    color: brown;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid brown;
+
+}
+.side-bar {
+    position: fixed;
+    background:cadetblue;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.side-bar .logo-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-bar li{
+    font-size: 24px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.side-bar li:hover {
+    background: white;
+    color: maroon;
+
+}
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background:oldlace;
+}
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px;
+}
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.container .header .nav .search {
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+.container .header .nav .search input[type=text] {
+    border: none;
+    background: whitesmoke;
+    padding: 10px;
+    width: 50%;
+}
+.container .header .nav .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .header .nav .admin {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .header .nav .admin img {
+    width: 40px;
+    height: 40px;
+
+}
+.container .header .nav .admin .img-design {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.container .header .nav .admin .img-design img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+.container .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    background:navajowhite;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: o 4px 8px;
+
+}
+.container .content .cards .card .icon-design img {
+    width: 60px;
+    height: 60px;
+}
+.container .content .content-ii {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}

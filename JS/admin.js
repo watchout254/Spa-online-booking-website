@@ -1,0 +1,1 @@
+prompt("ADMIN'S PASSWORD:");

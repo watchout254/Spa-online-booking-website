@@ -1,0 +1,1 @@
+alert("To book, you must first log in to your personal account kindly!!!");

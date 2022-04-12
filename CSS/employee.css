@@ -1,0 +1,125 @@
+@import url(https://fontawesome.com/v5.15/icons/qrcode?style=solid);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image:url(../IMAGES/bazuus.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: all .5s ease; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background:whitesmoke;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color:black;
+    text-align: center;
+    line-height: 70px;
+    background:white;
+    user-select: none;
+    font-weight: bolder;
+    font-style: oblique;
+
+}
+
+.sidebar header img {
+    clip-path: circle();
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color:black;
+    font-weight: bold;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(255, 255,255, .1);
+    border-bottom: 1px solid black;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+    transition: .5s;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+
+}
+
+#check {
+    display: none;
+}
+
+label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background:lightblue;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
+
+label #btn {
+    left:40px;
+    top: 25px;
+    font-size: 35px;
+    color:white;
+    transition: all .5s ease;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 10px;
+    font-size: 30px;
+    color:black;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events:none ;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+#check:checked ~ section{
+    margin-left: 250px;
+}
+
+.empbar {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
