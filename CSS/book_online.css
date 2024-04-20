@@ -152,3 +152,63 @@ section p {
     font-weight: bold;
     color: dodgerblue;
 }
+
+/* CSS for smaller devices */
+@media screen and (max-width: 600px) {
+    /* Adjust sidebar */
+    .sidebar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        overflow-y: auto;
+        background: #333;
+        transition: all 0.3s ease;
+    }
+    .sidebar.active {
+        left: 0;
+    }
+    .sidebar ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .sidebar ul li {
+        padding: 15px;
+        border-bottom: 1px solid #222;
+    }
+    .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Main content adjustment */
+    .container {
+        padding: 10px;
+    }
+
+    /* Form adjustment */
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Footer adjustment */
+    .socialmedia {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 400px) {
+    /* Reduce font sizes or adjust layout as needed */
+    .logo {
+        height: 50px; /* Adjust logo size for smaller screens */
+        width: 50px;
+    }
+    form {
+        padding: 5px; /* Adjust form padding for smaller screens */
+    }
+}
