@@ -1,1 +1,1 @@
-alert("To book, you must first log in to your personal account kindly!!!");
+alert("WELCOME TO FRADS SPA, BOOK WITH US TO GET QUALITY SERVICES!!");
