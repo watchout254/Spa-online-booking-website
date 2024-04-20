@@ -31,8 +31,8 @@
             <li><a href="log_in.php"><i class="fas fa-arrow-alt-circle-right"></i>LOG IN</a></li>
             <li><a href="admin.php"><i class="fas fa-user-shield"></i>ADMIN</a></li>
             <li><a href="employee.php"><i class="fas fa-address-card"></i>EMPLOYEE</a></li> -->
-            <li><a href="faqs.php"><i class="fas fa-question"></i>FAQS</a></li>
-            <li><a href="contact.php"><i class="fas fa-phone-volume"></i>CONTACT US</a></li>
+            <li><a href="faqs.html"><i class="fas fa-question"></i>FAQS</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone-volume"></i>CONTACT US</a></li>
         </ul>
     </div>
 
