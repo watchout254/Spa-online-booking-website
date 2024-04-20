@@ -10,61 +10,7 @@ body {
     transition: all .5s ease; 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
 
-.sidebar {
-    position: fixed;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background:whitesmoke;
-    transition: all .5s ease;
-}
-
-.sidebar header {
-    font-size: 22px;
-    color:black;
-    text-align: center;
-    line-height: 70px;
-    background:white;
-    user-select: none;
-    font-weight: bolder;
-    font-style: oblique;
-
-}
-
-.sidebar header img {
-    clip-path: circle();
-}
-
-.sidebar ul a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 15px;
-    color:black;
-    font-weight: bold;
-    padding-left: 40px;
-    box-sizing: border-box;
-    border-top: 1px solid rgb(255, 255,255, .1);
-    border-bottom: 1px solid black;
-}
-
-ul li:hover a {
-    padding-left: 50px;
-    transition: .5s;
-}
-
-.sidebar ul a i {
-    margin-right: 16px;
-
-}
 
 #check {
     display: none;
@@ -190,4 +136,65 @@ p {
     padding: 20px;
     font-weight: bold;
     color: dodgerblue;
+}
+
+/* CSS for smaller devices */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar header {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* Main content styles */
+section {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        left: -100%;
+    }
+    
+    section {
+        margin-left: 0;
+    }
 }
